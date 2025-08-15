@@ -1,9 +1,9 @@
 import styles from "./DevelopersNav.module.scss";
 import Link from "@@/src/utils/Link";
-import DocsIcon from "@@/public/src/img/developers/docs.inline.svg";
-import RpcApiIcon from "@@/public/src/img/developers/api.inline.svg";
-import CookbookIcon from "@@/public/src/img/developers/cookbook.inline.svg";
-import StackExchangeIcon from "@@/assets/developers/stackexchange.inline.svg";
+import DocsIcon from "../../assets/developers/docs.inline.svg";
+import RpcApiIcon from "../../assets/developers/api.inline.svg";
+import CookbookIcon from "../../assets/developers/cookbook.inline.svg";
+import StackExchangeIcon from "../../assets/developers/stackexchange.inline.svg";
 import { useTranslations } from "next-intl";
 
 export function DevelopersNav({containerClassName}) {

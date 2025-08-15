@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
-import AngleUp from "../../../public/src/img/icons/Angle-up.inline.svg";
-import AngleDown from "../../../public/src/img/icons/Angle-down.inline.svg";
+import AngleUp from "../../assets/icons/Angle-up.inline.svg";
+import AngleDown from "../../assets/icons/Angle-down.inline.svg";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@@/src/hooks/useRouter";
 import { HeaderListBuild } from "./HeaderListBuild";
