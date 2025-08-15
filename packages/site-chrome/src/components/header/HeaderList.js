@@ -4,13 +4,13 @@ import AngleUp from "../../../public/src/img/icons/Angle-up.inline.svg";
 import AngleDown from "../../../public/src/img/icons/Angle-down.inline.svg";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@@/src/hooks/useRouter";
-import HeaderListBuild from "./HeaderListBuild";
-import HeaderListSolutions from "./HeaderListSolutions";
-import HeaderListNetwork from "./HeaderListNetwork";
-import HeaderListCommunity from "./HeaderListCommunity";
-import HeaderListLearn from "./HeaderListLearn";
+import { HeaderListBuild } from "./HeaderListBuild";
+import { HeaderListSolutions } from "./HeaderListSolutions";
+import { HeaderListNetwork } from "./HeaderListNetwork";
+import { HeaderListCommunity } from "./HeaderListCommunity";
+import { HeaderListLearn } from "./HeaderListLearn";
 
-const HeaderList = () => {
+export const HeaderList = () => {
   const t = useTranslations();
   const { asPath } = useRouter();
 
@@ -171,5 +171,3 @@ const HeaderList = () => {
     </ul>
   );
 };
-
-export default HeaderList;

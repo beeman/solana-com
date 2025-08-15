@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 import SolanaLogo from "./assets/logos-solana/logotype.inline.svg";
 import Moon from "./assets/icons/Moon.inline.svg";
 import Sun from "./assets/icons/Sun.inline.svg";
-import HeaderList from "@@/src/components/header/HeaderList";
+import { HeaderList } from "./components/header/HeaderList";
 import { InkeepSearchBar } from "@@/src/app/components/inkeep/inkeep-searchbar";
 import { useTheme } from "@@/src/themecontext";
 import { useTranslations } from "next-intl";
-import DevelopersNav from "@@/src/components/developers/DevelopersNav/DevelopersNav";
+import { DevelopersNav } from "./components/DevelopersNav/DevelopersNav";
 // Using Tailwind classes directly; no SCSS import
 
-const Header = ({ className = "", containerClassName = "" }) => {
+export const Header = ({className = "", containerClassName = ""}) => {
   const router = useRouter();
   const { theme, toggleTheme, isThemePage } = useTheme();
   const t = useTranslations();
@@ -91,5 +91,3 @@ const Header = ({ className = "", containerClassName = "" }) => {
     </>
   );
 };
-
-export default Header;

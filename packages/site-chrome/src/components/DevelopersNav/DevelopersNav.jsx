@@ -6,7 +6,7 @@ import CookbookIcon from "@@/public/src/img/developers/cookbook.inline.svg";
 import StackExchangeIcon from "@@/assets/developers/stackexchange.inline.svg";
 import { useTranslations } from "next-intl";
 
-export default function DevelopersNav({ containerClassName }) {
+export function DevelopersNav({containerClassName}) {
   const t = useTranslations();
 
   return (

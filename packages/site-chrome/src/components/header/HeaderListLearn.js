@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Link } from "../../utils/Link";
-import StartSVG from "../../../assets/nav/learn/start.inline.svg";
+import StartSVG from "../../assets/nav/learn/start.inline.svg";
 
-const HeaderListLearn = () => {
+export const HeaderListLearn = () => {
   const t = useTranslations();
 
   return (
@@ -56,5 +56,3 @@ const HeaderListLearn = () => {
     </div>
   );
 };
-
-export default HeaderListLearn;

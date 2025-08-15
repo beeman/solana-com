@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 import Link, { InlineLink } from "../../utils/Link";
-import ResourcesSVG from "../../../assets/nav/network/resources.inline.svg";
-import InspectSVG from "../../../assets/nav/network/inspect.inline.svg";
+import ResourcesSVG from "../../assets/nav/network/resources.inline.svg";
+import InspectSVG from "../../assets/nav/network/inspect.inline.svg";
 
-const HeaderListNetwork = () => {
+export const HeaderListNetwork = () => {
   const t = useTranslations();
   const networkInspectItems = t.raw("nav.network.inspect.items");
   const networkResourcesItems = t.raw("nav.network.resources.items");
@@ -98,5 +98,3 @@ const HeaderListNetwork = () => {
     </div>
   );
 };
-
-export default HeaderListNetwork;

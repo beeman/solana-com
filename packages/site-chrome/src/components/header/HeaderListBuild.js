@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 import { Link } from "../../utils/Link";
-import DevelopersSVG from "../../../assets/nav/build/developers.inline.svg";
-import MoreSVG from "../../../assets/nav/build/cases.inline.svg";
+import DevelopersSVG from "../../assets/nav/build/developers.inline.svg";
+import MoreSVG from "../../assets/nav/build/cases.inline.svg";
 
-const HeaderListBuild = () => {
+export const HeaderListBuild = () => {
   const t = useTranslations();
 
   return (
@@ -91,5 +91,3 @@ const HeaderListBuild = () => {
     </div>
   );
 };
-
-export default HeaderListBuild;

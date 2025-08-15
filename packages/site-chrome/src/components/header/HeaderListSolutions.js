@@ -2,11 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "../../utils/Link";
-import SolutionsToolsSVG from "../../../assets/nav/solutions/solutions.inline.svg";
-import SolutionsCasesSVG from "../../../assets/nav/solutions/cases.inline.svg";
-import SolutionsResourcesSVG from "../../../assets/nav/solutions/resources.inline.svg";
+import SolutionsToolsSVG from "../../assets/nav/solutions/solutions.inline.svg";
+import SolutionsCasesSVG from "../../assets/nav/solutions/cases.inline.svg";
+import SolutionsResourcesSVG from "../../assets/nav/solutions/resources.inline.svg";
 
-const HeaderListSolutions = () => {
+export const HeaderListSolutions = () => {
   const t = useTranslations();
   const solutionsToolsItems = t.raw("nav.solutions.tools.items");
   const solutionsCasesItems = t.raw("nav.solutions.cases.items");
@@ -239,5 +239,3 @@ const HeaderListSolutions = () => {
     </>
   );
 };
-
-export default HeaderListSolutions;
